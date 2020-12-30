@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.margin_for_all_task {
+    margin-top: 100px;
+}
+
+
+/* task_1 */
+
+.main_for_task1 {
+    width: 700px;
+    height: 500px;
+    background: #0d5825;
+}
+
+.blckquote_txt {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+}
+
+img {
+    width: 150px;
+}
+
+.first_img{
+    position: relative;
+    top: 95px;
+    left: 250px;
+    transform: rotate(-25deg);
+    transition: top .5s;
+}
+
+.second_img {
+    position: relative;
+    top: 100px;
+    left: 150px;
+    transform: rotate(-15deg);
+    transition: top .5s;
+}
+
+.last_img {
+    position: relative;
+    top: 120px;
+    left: 50px;
+    transform: rotate(6deg);
+    transition: top .5s;
+}
+
+.first_img:hover {
+    top: 75px;
+}
+
+.second_img:hover {
+    top: 85px;
+}
+
+.last_img:hover {
+    top: 105px;
+}
+
+
+/* task_2 */
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background: #FF8888;
+}
+
+.blue {
+    background: #7E8AEB;
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+    z-index: 1;
+}
+
+.green {
+    background: #4DEF99;
+    position: relative;
+    bottom: 60px;
+    left: 100px;
+}
+
+
+/* task_3 */
+
+.asidebar {
+    height: 250px;
+    position: relative;
+}
+
+.sidebar_menu {
+    width: 250px;
+    height: 250px;
+    line-height: 2;
+    background: #808080;
+    position: absolute;
+    left: -240px;
+    transition: left 1s;
+    text-transform: uppercase;
+}
+
+.sidebar_menu:hover {
+    left: -20px;
+}
+
+.txt {
+    color: #ffff;
+    position: absolute;
+    left: 225px;
+    top: 90px;
+    writing-mode: vertical-lr;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.sidebar_menu:hover .txt {
+    opacity: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:before {
+    content: '🔸';
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+    transition: .5s linear;
+}
+
+a:hover {
+    color: #ffa500;
+}
+
+
+/* task_4 */
+
+.square {
+    width: 100px;
+    height: 100px;
+    animation: first-animation 3s infinite, second-animation 3s infinite ;
+}
+
+@keyframes first-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, 100px);
+    }
+
+    50% {
+        transform: translate(100px, 100px);
+    }
+
+    75% {
+        transform: translate(100px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes second-animation {
+    0% {
+        background: #ff0000;
+    }
+
+    25% {
+        background: #0000ff;
+    }
+
+    50% {
+        background: #008000;
+    }
+
+    75% {
+        background: #ffff00;
+    }
+
+    100% {
+        background: #ff0000;
+    }
+}
