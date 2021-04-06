@@ -278,6 +278,11 @@ html {
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 1em;
     margin: 10px;
+    transition: box-shadow .5s;
+}
+
+.card_classes:hover {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card_classes img {
